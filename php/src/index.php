@@ -14,7 +14,7 @@
 <body>
     <input type="button" value="buscar" id="buscar">
     <div id="resultado"></div>
-
+    <input type="text" id="nome">
     <input type="button" value="gravar" id="gravar">
 </body>
 </html>

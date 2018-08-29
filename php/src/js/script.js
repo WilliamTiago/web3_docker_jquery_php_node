@@ -17,10 +17,11 @@ $(document).ready(function() {
 
   $("#gravar").click(function() {
     //enviado
-    $.ajax({
+    let sNome = $("#nome").val();    
+    $.ajax({           
       type: "POST",
       url: "http://localhost:41071/pessoa",
-      data: '{"nome":"marcondes 2"}', //JSON.stringify ({nome: 'aluno'}),
+      data: JSON.stringify ({nome: sNome}),
       success: function(data) {
         //alert("data: " + data);
       },
