@@ -5,7 +5,7 @@ $(document).ready(function() {
       var items = [];
       $.each(data, function(key, val) {
         console.log(key);
-        items.push("<li id='" + val.id + "'>" + val.nome + "</li>");
+        items.push("<li id='" + val.id + "'>" + val.nome + "<span> |Excluir|</span id='alterar'><span id='alterar  '>Alterar|</span></li>");
       });
 
       $("<ul/>", {
@@ -31,4 +31,6 @@ $(document).ready(function() {
       $("#buscar").click();
     });
   });
+  $("span").style(color,blue);
+
 });
