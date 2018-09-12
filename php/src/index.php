@@ -14,6 +14,8 @@
 <body>
     <input type="button" value="buscar" id="buscar">
     <div id="resultado"></div>
+    <input hidden type="text" id="alteraNome">
+    <input hidden type="button" value="Confirmar" class="confirmar"></br>
     <input type="text" id="nome">
     <input type="button" value="gravar" id="gravar">
 </body>
